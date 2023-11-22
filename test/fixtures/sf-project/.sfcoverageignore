@@ -1,0 +1,3 @@
+force-app/main/default/classes/DateUtils.cls
+force-app/main/default/classes/StringUtils.cls
+force-app/main/default/triggers/ContactTrigger.trigger

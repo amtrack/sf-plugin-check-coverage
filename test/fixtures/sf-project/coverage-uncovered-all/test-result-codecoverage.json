@@ -1,0 +1,31 @@
+[
+  {
+    "id": "01p5200000NIWlaAAH",
+    "name": "StringUtils",
+    "totalLines": 190,
+    "lines": {
+      "329": 1
+    },
+    "totalCovered": 135,
+    "coveredPercent": 70
+  },
+  {
+    "id": "01p5200000NIWjMAAX",
+    "name": "DateUtils",
+    "totalLines": 272,
+    "lines": {
+      "490": 1,
+      "491": 0
+    },
+    "totalCovered": 223,
+    "coveredPercent": 74
+  },
+  {
+    "id": "01q03000000SHiEAAW",
+    "name": "ContactTrigger",
+    "totalLines": 272,
+    "lines": {},
+    "totalCovered": 0,
+    "coveredPercent": 0
+  }
+]

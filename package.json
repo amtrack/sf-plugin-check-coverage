@@ -1,0 +1,55 @@
+{
+  "name": "sf-plugin-check-coverage",
+  "version": "0.0.0-development",
+  "description": "sf/sfdx plugin to check the code coverage of a test run and per file",
+  "keywords": [
+    "sf-plugin",
+    "sfdx-plugin"
+  ],
+  "repository": "amtrack/sf-plugin-check-coverage",
+  "license": "MIT",
+  "author": "Matthias Rolke <mr.amtrack@gmail.com>",
+  "type": "module",
+  "exports": "./lib/index.js",
+  "bin": {
+    "sf-plugin-check-coverage": "bin/run.js"
+  },
+  "files": [
+    "/bin/run.js",
+    "/lib",
+    "/oclif.manifest.json"
+  ],
+  "scripts": {
+    "build": "rm -rf lib && tsc -p . && oclif manifest",
+    "prepack": "yarn build",
+    "prepare": "yarn build",
+    "test": "tsc -p test && nyc --reporter=lcov --reporter=text mocha \"test/**/*.test.ts\"",
+    "test:nuts": "tsc -p test && mocha --slow 5s --timeout 10s \"test/**/*.nut.ts\"",
+    "format": "prettier -w src test"
+  },
+  "mocha": {
+    "loader": "ts-node/esm",
+    "no-warnings": "ExperimentalWarning"
+  },
+  "dependencies": {
+    "@salesforce/sf-plugins-core": "5.0.4",
+    "@salesforce/source-deploy-retrieve": "10.0.3"
+  },
+  "devDependencies": {
+    "@salesforce/cli-plugins-testkit": "5.0.5",
+    "@salesforce/dev-scripts": "7.1.1",
+    "oclif": "4.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "oclif": {
+    "repositoryPrefix": "<%- repo %>/blob/main/<%- commandPath %>",
+    "commands": "./lib/commands",
+    "bin": "sf",
+    "topicSeparator": " ",
+    "additionalHelpFlags": [
+      "-h"
+    ]
+  }
+}

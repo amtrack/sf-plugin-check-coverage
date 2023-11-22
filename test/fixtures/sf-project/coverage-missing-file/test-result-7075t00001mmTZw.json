@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "testStartTime": "2023-11-24T16:31:15.000Z",
+    "testExecutionTime": "17 ms",
+    "testTotalTime": "17 ms",
+    "commandTime": "106 ms",
+    "hostname": "https://customer-page-1392-dev-ed.scratch.my.salesforce.com",
+    "orgId": "00D5t000000ENbIEAW",
+    "username": "test-9jq95tbhs88j@example.com",
+    "testRunId": "7075t00001mmTZw",
+    "userId": "0055t000004iXfwAAE",
+    "testRunCoverage": "100%",
+    "orgWideCoverage": "100%"
+  }
+}
