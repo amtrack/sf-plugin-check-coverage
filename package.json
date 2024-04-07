@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@salesforce/sf-plugins-core": "5.0.4",
-    "@salesforce/source-deploy-retrieve": "10.0.3"
+    "@salesforce/source-deploy-retrieve": "10.9.1"
   },
   "devDependencies": {
     "@salesforce/cli-plugins-testkit": "5.0.5",
