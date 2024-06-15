@@ -2,7 +2,7 @@
 
 > sf/sfdx plugin to check the code coverage of a test run and per file
 
-[![Actions Status](https://github.com/amtrack/sf-plugin-check-coverage/workflows/Test%20and%20Release/badge.svg)](https://github.com/amtrack/sf-plugin-check-coverage/actions)
+[![Actions Status](https://github.com/amtrack/sf-plugin-check-coverage/actions/workflows/default.yml/badge.svg)](https://github.com/amtrack/sf-plugin-check-coverage/actions/workflows/default.yml)
 
 This plugin uses the coverage information from `sf apex run test` and `sf apex get test` stored in a directory to enforce the Apex class and trigger coverage to be above a given threshold (in percent).
 If the code coverage is below the threshold, the command fails.
